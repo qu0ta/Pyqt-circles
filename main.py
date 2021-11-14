@@ -9,7 +9,7 @@ from PyQt5.QtWidgets import QMainWindow, QApplication
 class MainWindow(QMainWindow):
     def __init__(self):
         super(MainWindow, self).__init__()
-        uic.loadUi('untitled.ui', self)
+        uic.loadUi('UI.ui', self)
         self.setWindowTitle('Кружочки')
         self.circle_button.clicked.connect(self.run)
         self.is_paint = False
